@@ -1,13 +1,13 @@
 import React from 'react'
-import DefaultLayout from './DefaultLayout'
+import DefaultLayout from '../layout/DefaultLayout'
 
 
 function Home() {
     return (
         // <div className ='container'>
-        <DefaultLayout>
+        <div>
             <h1>Home</h1>
-        </DefaultLayout>
+        </div>
         // </div >
     )
 }

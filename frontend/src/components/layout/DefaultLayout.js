@@ -4,7 +4,7 @@ function DefaultLayout(props) {
 
     return (
         <div>
-            DefaultLayout
+            
             {props.children}
         </div>
     )
