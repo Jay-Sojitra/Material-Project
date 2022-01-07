@@ -1,5 +1,4 @@
 import React from 'react'
-import DefaultLayout from '../layout/DefaultLayout'
 
 
 function Home() {
