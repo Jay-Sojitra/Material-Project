@@ -1,3 +1,4 @@
+import "antd/dist/antd.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import DefaultLayout from "./components/layout/DefaultLayout";

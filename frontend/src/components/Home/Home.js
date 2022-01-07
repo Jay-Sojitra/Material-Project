@@ -1,14 +1,16 @@
-import React from 'react'
-
+import { Heading } from "@chakra-ui/react";
+import React from "react";
 
 function Home() {
-    return (
-        // <div className ='container'>
-        <div>
-            <h1>Home</h1>
-        </div>
-        // </div >
-    )
+  return (
+    <div >
+      <div>
+        <h1>Home</h1>
+      </div>
+
+      <Heading>I'm a Heading</Heading>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
