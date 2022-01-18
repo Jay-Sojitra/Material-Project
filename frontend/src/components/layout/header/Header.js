@@ -1,12 +1,12 @@
-
 import React from "react";
 import { Row, Col } from 'antd';
-import './DefaultLayout.css';
+import './Header.css';
 import { Heading } from '@chakra-ui/react';
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
+import { Button} from '@chakra-ui/react'
 
 
-function Header(props) {
+function Header() {
 
     const colleges =
         [{ name: 'BVM', Branches: ['Information technology', 'Civil engineering ', 'Computer engineering', 'Mechanical engineering'] },
@@ -17,13 +17,13 @@ function Header(props) {
 
     return (
         <>
-            <div className="header  d-flex justify-content-center ">
+            <div className="header d-flex justify-content-center ">
                 <Row gutter={16} justify='center'>
                     <Col lg={20} sm={24} xs={24}>
                         <div className="d-flex justify-content-between">
                             <div>
                                 <Heading as='h2' size='3xl' isTruncated>
-                                    Materials
+                                   <Link to='/'> Materials</Link>
                                 </Heading>
                             </div>
 
@@ -53,7 +53,9 @@ function Header(props) {
                                     {college.Branches.map((branch) => {
                                         return (
                                             <div className="m-2">
-                                                <Heading as='h5' size='sm' className="branch">{branch}</Heading>
+                                                <Heading as='h5' size='sm' className="branch">
+                                                <Link to = {`/${college.name}/${branch}`}>{branch}</Link>
+                                                </Heading>
                                             </div>
                                         )
                                     })}
@@ -73,8 +75,6 @@ function Header(props) {
                 })}
             </Row>
 
-          
-            {/* {props.children} */}
         </>
     )
 }

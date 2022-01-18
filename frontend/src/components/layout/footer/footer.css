@@ -1,6 +1,6 @@
 #footer {
   margin-top: 10vmax;
-  position: fixed;
+  position: inherit;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -8,6 +8,7 @@
   background-color: rgb(34, 33, 33);
   color: white;
   align-items: center;
+  margin-top:0;
 }
 
 hr {

@@ -1,12 +1,12 @@
 import "antd/dist/antd.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import DefaultLayout from "./components/layout/DefaultLayout";
 import Home from "./components/Home/Home";
 import React from "react";
 import WebFont from "webfontloader";
 import Header from "./components/layout/header/Header";
 import Footer from "./components/layout/footer/Footer";
+import CollegeBranch from "./components/CollegeBranch";
 
 function App() {
   React.useEffect(() => {
@@ -22,6 +22,7 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:college/:branch" element={<CollegeBranch />} />
         </Routes>
         <Footer></Footer>
       </Router>

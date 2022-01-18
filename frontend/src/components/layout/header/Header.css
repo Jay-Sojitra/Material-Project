@@ -1,29 +1,12 @@
 .header {
-    /* padding-top: 10px;
-    padding-bottom: 0px; */
     padding: 10px;
     border: solid grey !important;
+    width: 100%;
 
-}
-
-.header .ant-btn {
-    box-shadow: none !important;
-    background-color: white !important;
-    color: orangered !important;
-    border: 1px solid orangered !important;
-    /* padding: 5px 15px !important; */
-    outline: grey !important;
 }
 
 .bs1 {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.containerr {
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
 }
 
 .college-btn{
@@ -34,8 +17,6 @@
     border-radius: 5px;
     margin-top: 50px;
     height: 10px;
-    /* opacity: 0; */
-
     transition: 0.3s;
 } 
 
