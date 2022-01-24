@@ -36,7 +36,7 @@ function CollegeBranch() {
                 return <div className="card">
                     <Heading as='h3' size='lg'>{`Semester - ${semester}`}</Heading>
                     <hr />
-                    <div class="container">
+                    <div className="container">
                         <button className='btn1 btn'><Link to={`/${college}/${branch}/${semester}/course`}>course</Link></button>
                         <button className='btn2 btn'><Link to={`/${college}/${branch}/${semester}/timeTable`}>Time-Table</Link></button>
                         <button className='btn3 btn'><Link to={`/${college}/${branch}/${semester}/Papers`}>Papers</Link></button>
