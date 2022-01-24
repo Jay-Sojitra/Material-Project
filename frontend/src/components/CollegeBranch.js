@@ -1,10 +1,9 @@
 import React from 'react'
-import { Route, Routes, useMatch, useParams } from 'react-router-dom';
+import { Link, Route, Routes, useMatch, useParams } from 'react-router-dom';
 import { Card } from 'antd';
 import { Heading } from '@chakra-ui/react';
 import { Button } from 'antd';
 import './CollegeBranch.css';
-import { Link } from 'react-router-dom'; 
 import Paper from './Paper';
 
 function CollegeBranch() {
@@ -13,7 +12,8 @@ function CollegeBranch() {
 
     const { branch } = useParams();
     const { college } = useParams();
-    // const {path, url} = useMatch();
+    // const { path, url } = useMatch();
+    console.log(useMatch());
 
     return (
         <div>
@@ -41,7 +41,7 @@ function CollegeBranch() {
                     <div class="container">
                         <button className='btn1 btn'><Link to={`/${college}/${branch}/${semester}/course`}>course</Link></button>
                         <button className='btn2 btn'><Link to={`/${college}/${branch}/${semester}/timeTable`}>Time-Table</Link></button>
-                        {/* <button className='btn3 btn'><Link to={`/${college}/${branch}/${semester}/Papers`}>Papers</Link></button> */}
+                        <button className='btn3 btn'><Link to={`/${college}/${branch}/${semester}/Papers`}>Papers</Link></button>
                         {/* <button className='btn3 btn'><Link to={`${url}/${semester}/papers`}>Papers</Link></button> */}
                     </div>
                     {/* <Routes>
