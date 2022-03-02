@@ -7,6 +7,7 @@ import WebFont from "webfontloader";
 import Header from "./components/layout/header/Header";
 import Footer from "./components/layout/footer/Footer";
 import CollegeBranch from "./components/CollegeBranch";
+import Paper from "./components/Paper";
 
 function App() {
   React.useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:college/:branch" element={<CollegeBranch />} />
+          <Route path="/:college/:branch/:semester/Papers" element={<Paper />} />
         </Routes>
         <Footer></Footer>
       </Router>
