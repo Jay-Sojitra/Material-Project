@@ -4,9 +4,9 @@ import { useParams } from 'react-router-dom';
 const Paper = () => {
 
     const { semester } = useParams();
-    return <div>
+    return (<div>
         {semester} -Paper
-    </div>;
-};
+    </div>)
 
+}
 export default Paper;
